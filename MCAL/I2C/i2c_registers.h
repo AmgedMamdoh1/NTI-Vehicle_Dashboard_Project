@@ -3,15 +3,6 @@
 
 #include "../../Service/STD_Types.h"
 
-/* ================================================================================
- *  ATmega32 TWI (I2C) REGISTER MAP
- *  ------------------------------------------------------------------------------
- *  The Two-Wire Interface (TWI) is Atmel's name for I2C. Bus pins are fixed:
- *      - SCL = PC0   - SDA = PC1
- *  Both lines require external pull-up resistors. After every bus operation the
- *  hardware writes a status code into the top 5 bits of TWSR (mask with 0xF8).
- * ============================================================================== */
-
 /* ---------------- Control / Status / Data / Address Registers ---------------- */
 #define I2C_TWBR_REG       (*(volatile u8 *)0x20)   /* TWI Bit Rate Register        */
 #define I2C_TWSR_REG       (*(volatile u8 *)0x21)   /* TWI Status Register          */

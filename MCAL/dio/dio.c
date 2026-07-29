@@ -1,10 +1,3 @@
-/*
- * dio.c - MCAL Digital I/O Driver for ATmega32A
- *
- * Project 04: Vehicle Dashboard
- * Microcontroller: ATmega32A
- */
-
 #include "dio.h"
 #include <avr/io.h>
 

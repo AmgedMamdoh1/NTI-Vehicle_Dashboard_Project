@@ -10,7 +10,6 @@ static uint16_t s_stepTimer = 0U;   /* Step duration counter in 10 ms ticks */
 static uint8_t s_patternStep = 0U;  /* Current step index within pattern   */
 
 /* External MCAL / GPIO declarations */
-/* TODO: Remove extern declarations once MCAL dio.h / pwm.h is integrated */
 extern void DIO_SetPinDirection(uint8_t port, uint8_t pin, uint8_t direction);
 extern void DIO_SetPinLevel(uint8_t port, uint8_t pin, uint8_t level);
 

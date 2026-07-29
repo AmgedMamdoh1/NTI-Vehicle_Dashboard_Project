@@ -3,16 +3,6 @@
 
 #include "../../Service/STD_Types.h"
 
-/* ================================================================================
- *  ATmega32 USART REGISTER MAP
- *  ------------------------------------------------------------------------------
- *  The ATmega32 has a single USART. Note the register-sharing quirk:
- *  UCSRC and UBRRH occupy the SAME I/O address (0x40). The URSEL bit (bit 7) of
- *  the written value selects which one is being addressed:
- *      - Write with URSEL = 1 -> the write targets UCSRC.
- *      - Write with URSEL = 0 -> the write targets UBRRH.
- * ============================================================================== */
-
 /* ---------------- Data / Control / Status Registers ---------------- */
 #define UART_UDR_REG       (*(volatile u8 *)0x2C)   /* USART I/O Data Register            */
 #define UART_UCSRA_REG     (*(volatile u8 *)0x2B)   /* USART Control & Status Register A  */
